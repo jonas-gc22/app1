@@ -84,3 +84,31 @@ Universidad Tecnológica de Santiago (UTESA)
 ## 🚀 Cómo Ejecutar el Proyecto
 
 1. Clonar el repositorio
+
+https://github.com/jonas-gc22/app1.git
+
+2. Abrir Android Studio
+
+3. Seleccionar **Open Project**
+
+4. Buscar la carpeta del proyecto clonado
+
+5. Esperar la sincronización de Gradle
+
+6. Ejecutar la aplicación en:
+    - Un emulador de Android
+    - O un dispositivo físico
+
+---
+
+## 📌 Conclusión
+
+Este proyecto permitió aplicar los conceptos básicos del desarrollo de interfaces gráficas en Android, utilizando componentes visuales para mostrar información de manera clara y organizada.
+
+La implementación del ListView con CardView, junto con el manejo de eventos de selección y mensajes emergentes, permitió reforzar habilidades fundamentales en el desarrollo de aplicaciones móviles con Kotlin y Android Studio.
+
+---
+
+## 📄 Licencia
+
+Proyecto académico desarrollado únicamente con fines educativos.
