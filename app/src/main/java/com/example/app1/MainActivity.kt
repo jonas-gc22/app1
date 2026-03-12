@@ -1,12 +1,14 @@
 package com.example.app1
 
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -20,22 +22,27 @@ class MainActivity : AppCompatActivity() {
             "Administración"
         )
 
-        val adapter = ArrayAdapter(
+        val adapter = object : ArrayAdapter<String>(
             this,
-            android.R.layout.simple_list_item_1,
+            R.layout.item_carrera,
+            R.id.txtCarrera,
             carreras
-        )
+        ) {}
 
         listView.adapter = adapter
 
         listView.setOnItemClickListener { _, _, position, _ ->
+
             val carrera = carreras[position]
 
-            Toast.makeText(
+            val toast = Toast.makeText(
                 this,
                 "Seleccionaste: $carrera",
                 Toast.LENGTH_SHORT
-            ).show()
+            )
+
+            toast.setGravity(Gravity.TOP, 0, 150)
+            toast.show()
         }
     }
 }
